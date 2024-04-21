@@ -66,7 +66,7 @@ def main(args: argparse.Namespace) -> None:
         "prompt": f"a digital avatar of a {descriptor} {subject_name}, <lora:tokenframe1> tokenfram\
             e, rusted metal themed frame, distopian future, barren landscape, dust in the air, rays\
              of sunshine through whisps of pollution, black trenchcoat, opaque steampunk goggles, d\
-            irty, rugged, wind burn, apocalyptic, sepia. breaking bad, dusk",
+            irty, rugged, wind burn, apocalyptic, sepia, dusk",
         "negative_prompt": "(asymmetry, worst quality, low quality,), open mouth, Blurry photo, dis\
             tortion, low-res, bad quality",
         # "loras": {
