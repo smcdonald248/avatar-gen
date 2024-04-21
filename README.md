@@ -1,5 +1,7 @@
 # avatar-gen
 
+A image generation solution built with OctoAI that will create AI generated avatar images of specific people using OctoAI's "Photo Merge" feature.
+
 ## usage
 
 Put at least 4 varied photos of your subject into a subfolder in the `images` folder that corresponds with the subjects name<br><br>
