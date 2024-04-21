@@ -18,4 +18,6 @@ options:
                         Additional subject descriptors (e.g. gender) (Default: 'person')
 ```
 <br>
-`python img_gen.py steve -d "man"`
+```
+python img_gen.py steve -d "man"
+```
