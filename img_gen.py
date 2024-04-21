@@ -63,16 +63,15 @@ def main(args: argparse.Namespace) -> None:
 
     b64_images = [encode_b64(image_path, image) for image in image_names]
     payload: dict[str, Any] = {
-        # "prompt": "photorealistic, high definition",
         "prompt": f"a digital avatar of a {descriptor} {subject_name}, <lora:tokenframe1> tokenfram\
             e, rusted metal themed frame, distopian future, barren landscape, dust in the air, rays\
              of sunshine through whisps of pollution, black trenchcoat, opaque steampunk goggles, d\
             irty, rugged, wind burn, apocalyptic, sepia. breaking bad, dusk",
         "negative_prompt": "(asymmetry, worst quality, low quality,), open mouth, Blurry photo, dis\
             tortion, low-res, bad quality",
-        "loras": {
-            "asset_01hw0n8av4ex8s5zw64ex132n5": 1.0 # game-avatar-token-frame from CivitAI
-            },
+        # "loras": {
+        #     "<custom asset output from octoai account>": 1.0 # game-avatar-token-frame from CivitAI
+        #     },
         "checkpoint": "crystal-clear",
         "width": 1024,
         "height": 1024,
