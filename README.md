@@ -4,11 +4,11 @@ A image generation solution built with OctoAI that will create AI generated avat
 
 ## usage
 
-Sign up for an OctoAI account at https://octo.ai/.  Generate an API token and update the `.env` file.
+- Sign up for an OctoAI account at https://octo.ai/.  Generate an API token and update the `.env` file.
 
-Put at least 4 varied photos of your subject into a subfolder in the `images/<subject-name>` folder that corresponds with the subjects name.  e.g. a subject named "jim" would have example photos staged in `images/jim`<br><br>
+- Place at least 4 varied photos of your subject into a subfolder in the `images/<subject-name>` folder that corresponds with the subjects name.  e.g. a subject named "jim" would have example photos staged in `images/jim`<br><br>
 
-Update the prompt in code: https://github.com/smcdonald248/avatar-gen/blob/main/img_gen.py#L67<br><br>
+- Update the prompt in code: https://github.com/smcdonald248/avatar-gen/blob/main/img_gen.py#L67<br><br>
 
 ```
 usage: img_gen.py [-h] [-d DESCRIPTOR] subject_name
