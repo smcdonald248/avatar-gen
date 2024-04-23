@@ -10,6 +10,7 @@ import os
 import random
 import string
 import sys
+from pathlib import Path
 from typing import Any
 
 import requests
@@ -53,11 +54,11 @@ def main(args: argparse.Namespace) -> None:
     subject_name: str = args.subject_name
     descriptor: str = args.descriptor
     image_path: str = f"images/{args.subject_name}"
-    output_path: str = f"output/{subject_name}"
+    output_path: Path = Path(f"output/{subject_name}")
     base_output_name: str = f"{output_path}/base_result-{subject_name}-{random_suffix()}-%s.jpg"
     image_names: list[str] = os.listdir(image_path)
     try:
-        os.mkdir(output_path)
+        output_path.mkdir(parents=True, exist_ok=True)
     except FileExistsError:
         pass
 
